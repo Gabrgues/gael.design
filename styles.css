@@ -29,6 +29,10 @@ body {
 .menu-toggle{
     display: none;
 }
+.menu.active ul {
+    display: flex;
+    flex-direction: column;
+}
 .menu li {
     position: relative;
     float: left;
@@ -260,7 +264,10 @@ footer p {
         border-radius: 4px;
         cursor: pointer;
     }
-
+    .menu.active ul {
+        display: flex;
+        flex-direction: column;
+    }
     .menu ul {
         list-style: none;
         padding: 0;
