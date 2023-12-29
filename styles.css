@@ -87,11 +87,13 @@ body {
     font-size: 3em;
     color: #fe9920;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .section-one h3 {
     color: #fff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .section-one p {
@@ -245,12 +247,41 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px; 
+    .menu {
+        display: none; 
     }
 
-    .menu {
-        padding: 10px; 
+    .menu-toggle {
+        display: block; 
+        padding: 10px;
+        background-color: #fe9920;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        display: none; 
+    }
+
+    .menu li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-toggle.active + .menu ul {
+        display: flex; 
     }
 
     .menu li a {
@@ -282,8 +313,8 @@ footer p {
     }
 
     .svg {
-        width: 20px; 
-        height: 20px;
+        width: 40px; 
+        height: 40px;
         margin: 5px;
     }
 }
