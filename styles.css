@@ -89,7 +89,6 @@ body {
     font-size: 3em;
     color: #fe9920;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .section-one h3 {
@@ -280,7 +279,15 @@ footer p {
         padding: 10px;
         text-align: center;
     }
-
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
     .menu-toggle.active + .menu ul {
         display: flex; 
     }
@@ -290,11 +297,14 @@ footer p {
     }
 
     .section-one h1 {
-        font-size: 2.5em; 
+        font-size: 2em; 
+        text-align: center;
     }
 
     .section-one p {
         font-size: 1em;
+        text-align: center;
+
     }
 
     .box-two img {
@@ -302,7 +312,8 @@ footer p {
     }
 
     .portfolio-item img {
-        width: 40%;
+        width: 30%;
+        height: auto;
     }
 
     .section-contato {
