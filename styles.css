@@ -1,0 +1,229 @@
+  @import url('https://fonts.googleapis.com/css2?family=Onest&family=Playpen+Sans:wght@500&family=Poppins&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    font-size: 18px;
+}
+
+.parallax {
+    background-image: url(background1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menu{
+    padding: 30px;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+}
+
+.menu li a{
+    border-radius: 4px;
+    color:#fff; 
+    text-decoration:none;
+    margin-left:50px;
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:rgba(254, 154, 32, 0.432);
+    color:#fff;
+    text-shadow:0px 0px 5px #fff;
+}
+.menu li  ul{
+    margin: 10px;
+    position:absolute;
+    top:25px;
+    left:0;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+.menu li ul li{
+    display:block;
+    width:150px;
+}
+
+.logo{
+    display: inline;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+
+}
+.section-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20PX;
+    position: relative;
+    z-index: 1;
+}
+
+.section-one h1 {
+    font-size: 3em;
+    color: #fe9920; 
+    margin-bottom: 20px;
+}
+.section-one h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.section-one p{
+    max-width: 1000px;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background:rgba(51, 51, 51, 0.493);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fe9920;
+}
+.section-two{
+    color: #fff;
+    background-color: #566E3D;
+    height: auto;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:  auto;
+}
+
+.box-two img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+.big-name{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.section-port{
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.section-port h2{
+    color: #566E3D;
+
+}
+.portfolio-grid {
+    display: grid;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.portfolio-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+.section-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20PX;
+    height: 30vh;
+    position: relative;
+    z-index: 1;
+}
+.section-contato h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.section-contato p{
+    color: #fff;
+}
+.social-media{
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+.svg{
+    color: #fff;
+
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    width: 30px; 
+    height: 30px; 
+    margin: 8px;
+}
+
+footer{
+    padding: 40px 0 30px;
+    background-color: #4C543C;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    color: #fff;
+}
+.logo-footer{
+    width: 100%; 
+    max-width: 350px;
+    display: flex;
+}
+
