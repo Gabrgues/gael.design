@@ -265,7 +265,7 @@ footer p {
     display: flex;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
     header{
         display: none;
     }
